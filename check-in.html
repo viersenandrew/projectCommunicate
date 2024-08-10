@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="check-in.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar-container" hidden>
+        <div class="navbar">
+            <div class="top-left" id="top-left"></div>
+            <div class="top-right" id="top-right"></div>
+            <div class="bottom-left" id="bottom-left"></div>
+            <div class="bottom-right" id="bottom-right"></div>
+        </div>
+    </div>
+    <form id="general-form">
+        <section class="header-container">
+            <div >
+                <h1 class="title">Check-In</h1>
+                <p class="title-description">test</p>
+            </div>
+            <!-- General -->
+            
+            <div class="general-check-in-prompt" id="general-check-in-prompt">
+                <div class="general-emotion-widget-container">
+                
+                    <div class="emotion" id="general">
+                        <div class="general-emotion-container" id="general-container">
+                            <a href="" class="emotion-text-container" id="general-container-link">
+                                <div>
+                                    <p class="emotion-text">General Well-Being</p>
+                                </div>
+                                <div class="drop-down-arrow" id="general-drop-down-arrow"></div>
+                            </a>
+                            <div class="slider-container">
+                                <input type="range" name="general-slider-value" name="-slider-value" class="slider" id="general-slider" min="5" max="100" value="60" step="5" required>
+                                <h4 class="slider-value-text" id="general-value-text">60</h4>
+                            </div>
+                            <div class="emoji-container">
+                                <select class="emoji-selector" id="general-emoji" name="general-emoji-value">
+                                    <option value="10">&#128534</option>
+                                    <option value="20">&#128553</option>
+                                    <option value="30">&#128542</option>
+                                    <option value="40">&#128543</option>
+                                    <option value="50">&#128528</option>
+                                    <option value="60">&#128522</option>
+                                    <option value="70">&#128512</option>
+                                    <option value="80">&#128513</option>
+                                    <option value="90">&#128518</option>
+                                    <option value="100">&#128514</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div class="emotion-definition" id="general-definition" hidden>
+                                <p>This is test text</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        
+
+            </section>
+            <section class="section-container" id="section-container">
+                <div  class="check-in-prompt" id="check-in-prompt">
+                    <div class="emotion-widget-container">
+                        
+                        <div class="emotion" id="happiness">
+                            <div class="emotion-container" id="happiness-container">
+                                <a href="" class="emotion-text-container" id="happiness-container-link">
+                                    
+                                    <div>
+                                        <p class="emotion-text">Happiness</p>
+                                    </div>
+                                    <div class="drop-down-arrow" id="happiness-drop-down-arrow"></div>
+                                </a>
+                                <div class="slider-container">
+                                    <input type="range" name="happiness-slider-value" class="slider" id="happiness-slider" min="5" max="100" value="60" step="5">
+                                    <h4 class="slider-value-text" id="happiness-value-text">50</h4>
+                                    
+                                </div>
+                                
+                                <div class="emoji-container">
+                                    <select class="emoji-selector" id="happiness-emoji">
+                                        <option value="10">&#128534</option>
+                                        <option value="20">&#128553</option>
+                                        <option value="30">&#128542</option>
+                                        <option value="40">&#128543</option>
+                                        <option value="50">&#128528</option>
+                                        <option value="60">&#128522</option>
+                                        <option value="70">&#128512</option>
+                                        <option value="80">&#128513</option>
+                                        <option value="90">&#128518</option>
+                                        <option value="100">&#128514</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <div class="emotion-definition" id="happiness-definition" hidden>
+                                    <p>This is test text</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="emotion" id="contentment">
+                            <div class="emotion-container" id="contentment-container">
+                                <a href="" class="emotion-text-container" id="contentment-container-link">
+                                    
+                                    <div>
+                                        <p class="emotion-text">Contentment</p>
+                                    </div>
+                                    <div class="drop-down-arrow" id="contentment-drop-down-arrow"></div>
+                                </a>
+                                <div class="slider-container">
+                                    <input type="range" name="-slider-value" class="slider" id="contentment-slider" min="5" max="100" value="60" step="5">
+                                    <h4 class="slider-value-text" id="contentment-value-text">50</h4>
+                                    
+                                </div>
+                                
+                                <div class="emoji-container">
+                                    <select class="emoji-selector" id="contentment-emoji">
+                                        <option value="10">&#128534</option>
+                                        <option value="20">&#128553</option>
+                                        <option value="30">&#128542</option>
+                                        <option value="40">&#128543</option>
+                                        <option value="50">&#128528</option>
+                                        <option value="60">&#128522</option>
+                                        <option value="70">&#128512</option>
+                                        <option value="80">&#128513</option>
+                                        <option value="90">&#128518</option>
+                                        <option value="100">&#128514</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <div class="emotion-definition" id="contentment-definition" hidden>
+                                    <p>This is test text</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="emotion" id="peace">
+                            <div class="emotion-container" id="peace-container">
+                                <a href="" class="emotion-text-container" id="peace-container-link">
+                                    
+                                    <div>
+                                        <p class="emotion-text">Peace</p>
+                                    </div>
+                                    <div class="drop-down-arrow" id="peace-drop-down-arrow"></div>
+                                </a>
+                                <div class="slider-container">
+                                    <input type="range" name="-slider-value" class="slider" id="peace-slider" min="5" max="100" value="60" step="5">
+                                    <h4 class="slider-value-text" id="peace-value-text">50</h4>
+                                    
+                                </div>
+                                
+                                <div class="emoji-container">
+                                    <select class="emoji-selector" id="peace-emoji">
+                                        <option value="10">&#128534</option>
+                                        <option value="20">&#128553</option>
+                                        <option value="30">&#128542</option>
+                                        <option value="40">&#128543</option>
+                                        <option value="50">&#128528</option>
+                                        <option value="60">&#128522</option>
+                                        <option value="70">&#128512</option>
+                                        <option value="80">&#128513</option>
+                                        <option value="90">&#128518</option>
+                                        <option value="100">&#128514</option>
+                                    </select>
+                                </div>
+                                <br>
+                            <div class="emotion-definition" id="peace-definition" hidden>
+                                <p>This is test text</p>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="emotion" id="fulfillment">
+                            <div class="emotion-container" id="fulfillment-container">
+                                <a href="" class="emotion-text-container" id="fulfillment-container-link">
+                                    
+                                    <div>
+                                        <p class="emotion-text">Fulfillment</p>
+                                    </div>
+                                    <div class="drop-down-arrow" id="fulfillment-drop-down-arrow"></div>
+                                </a>
+                                <div class="slider-container">
+                                    <input type="range" name="-slider-value" class="slider" id="fulfillment-slider" min="5" max="100" value="60" step="5">
+                                    <h4 class="slider-value-text" id="fulfillment-value-text">50</h4>
+                                    
+                                </div>
+                                
+                                <div class="emoji-container">
+                                    <select class="emoji-selector" id="fulfillment-emoji">
+                                        <option value="10">&#128534</option>
+                                        <option value="20">&#128553</option>
+                                        <option value="30">&#128542</option>
+                                        <option value="40">&#128543</option>
+                                        <option value="50">&#128528</option>
+                                        <option value="60">&#128522</option>
+                                        <option value="70">&#128512</option>
+                                        <option value="80">&#128513</option>
+                                        <option value="90">&#128518</option>
+                                        <option value="100">&#128514</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <div class="emotion-definition" id="fulfillment-definition" hidden>
+                                    <p>This is test text</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="emotion" id="adventurous">
+                            <div class="emotion-container" id="adventurous-container">
+                                <a href="" class="emotion-text-container" id="adventurous-container-link">
+                                    
+                                    <div>
+                                        <p class="emotion-text">Adventurous</p>
+                                    </div>
+                                    <div class="drop-down-arrow" id="adventurous-drop-down-arrow"></div>
+                                </a>
+                                <div class="slider-container">
+                                    <input type="range" name="-slider-value" class="slider" id="adventurous-slider" min="5" max="100" value="60" step="5">
+                                    <h4 class="slider-value-text" id="adventurous-value-text">50</h4>
+                                    
+                                </div>
+                                
+                                <div class="emoji-container">
+                                    <select class="emoji-selector" id="adventurous-emoji">
+                                        <option value="10">&#128534</option>
+                                        <option value="20">&#128553</option>
+                                        <option value="30">&#128542</option>
+                                        <option value="40">&#128543</option>
+                                        <option value="50">&#128528</option>
+                                        <option value="60">&#128522</option>
+                                        <option value="70">&#128512</option>
+                                        <option value="80">&#128513</option>
+                                        <option value="90">&#128518</option>
+                                        <option value="100">&#128514</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <div class="emotion-definition" id="adventurous-definition" hidden>
+                                    <p>This is test text</p>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="emotion" id="drive">
+                            <div class="emotion-container" id="drive-container">
+                                <a href="" class="emotion-text-container" id="drive-container-link">
+                                    
+                                    <div>
+                                        <p class="emotion-text">Drive</p>
+                                    </div>
+                                    <div class="drop-down-arrow" id="drive-drop-down-arrow"></div>
+                                </a>
+                                <div class="slider-container">
+                                    <input type="range" name="-slider-value" class="slider" id="drive-slider" min="5" max="100" value="60" step="5">
+                                    <h4 class="slider-value-text" id="drive-value-text">50</h4>
+                                    
+                                </div>
+                                
+                                <div class="emoji-container">
+                                    <select class="emoji-selector" id="drive-emoji">
+                                        <option value="10">&#128534</option>
+                                        <option value="20">&#128553</option>
+                                        <option value="30">&#128542</option>
+                                        <option value="40">&#128543</option>
+                                        <option value="50">&#128528</option>
+                                        <option value="60">&#128522</option>
+                                        <option value="70">&#128512</option>
+                                        <option value="80">&#128513</option>
+                                        <option value="90">&#128518</option>
+                                        <option value="100">&#128514</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <div class="emotion-definition" id="adventurous-definition" hidden>
+                                    <p>This is test text</p>
+                                </div>
+                                
+                            </div>    
+                        </div>
+                        <div class="emotion" id="willpower">
+                            <div class="emotion-container" id="willpower-container">
+                                <a href="" class="emotion-text-container" id="willpower-container-link">
+                                    
+                                    <div>
+                                        <p class="emotion-text">Willpower</p>
+                                    </div>
+                                    <div class="drop-down-arrow" id="willpower-drop-down-arrow"></div>
+                                </a>
+                                <div class="slider-container">
+                                    <input type="range" name="-slider-value" class="slider" id="willpower-slider" min="5" max="100" value="60" step="5">
+                                    <h4 class="slider-value-text" id="willpower-value-text">50</h4>
+                                    
+                                </div>
+                                
+                                <div class="emoji-container">
+                                    <select class="emoji-selector" id="willpower-emoji">
+                                        <option value="10">&#128534</option>
+                                        <option value="20">&#128553</option>
+                                        <option value="30">&#128542</option>
+                                        <option value="40">&#128543</option>
+                                        <option value="50">&#128528</option>
+                                        <option value="60">&#128522</option>
+                                        <option value="70">&#128512</option>
+                                        <option value="80">&#128513</option>
+                                        <option value="90">&#128518</option>
+                                        <option value="100">&#128514</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <div class="emotion-definition" id="willpower-definition" hidden>
+                                    <p>This is test text</p>
+                                </div>
+                            </div>    
+                        
+                        </div>
+                        <div class="emotion" id="excitement">
+                            <div class="emotion-container" id="excitement-container">
+                                <a href="" class="emotion-text-container" id="excitement-container-link">
+                                    
+                                    <div>
+                                        <p class="emotion-text">Excitement</p>
+                                    </div>
+                                    <div class="drop-down-arrow" id="excitement-drop-down-arrow"></div>
+                                </a>
+                                <div class="slider-container">
+                                    <input type="range" name="-slider-value" class="slider" id="excitement-slider" min="5" max="100" value="60" step="5">
+                                    <h4 class="slider-value-text" id="excitement-value-text">50</h4>
+                                    
+                                </div>
+                                
+                                <div class="emoji-container">
+                                    <select class="emoji-selector" id="excitement-emoji">
+                                        <option value="10">&#128534</option>
+                                        <option value="20">&#128553</option>
+                                        <option value="30">&#128542</option>
+                                        <option value="40">&#128543</option>
+                                        <option value="50">&#128528</option>
+                                        <option value="60">&#128522</option>
+                                        <option value="70">&#128512</option>
+                                        <option value="80">&#128513</option>
+                                        <option value="90">&#128518</option>
+                                        <option value="100">&#128514</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <div class="emotion-definition" id="excitement-definition" hidden>
+                                    <p>This is test text</p>
+                                </div>
+                                
+                        
+                        </div>
+
+                    </div>
+                    
+                </div>
+            </section>
+            <div class="submit-button-container">
+                <input type="submit" value="Post" name="submit" class="submit-button" id="submit-button">
+            </div>
+        </form>
+
+    <!-- Scripts  -->
+    
+    <!-- General Script -->
+    <script>
+        // OnClick Event Listener General
+        // Prevent Default:
+        document.getElementById("general-container-link").addEventListener("click", function(event) {
+            event.preventDefault();
+    
+            // Assign var to html elements
+            var generalContainer = document.getElementById("general-container");
+            var generalArrow = document.getElementById("general-drop-down-arrow");
+            var generalDefinition = document.getElementById("general-definition");
+    
+            // if statement to determine if 
+            if (generalContainer.classList.contains('general-emotion-container')) {
+                // Expand
+                generalContainer.classList.remove('general-emotion-container');
+                generalContainer.classList.add('general-emotion-container-expanded');
+                generalArrow.classList.remove('drop-down-arrow');
+                generalArrow.classList.add('drop-down-arrow-expanded');
+                document.getElementById("section-container").style.margin = "350px auto";
+                document.getElementById("general-check-in-prompt").style.height = "400px";
+                generalDefinition.hidden = false;
+            } else {
+                // Collapse
+                generalContainer.classList.remove('general-emotion-container-expanded');
+                generalContainer.classList.add('general-emotion-container');
+                generalArrow.classList.remove('drop-down-arrow-expanded');
+                generalArrow.classList.add('drop-down-arrow');
+                document.getElementById("general-check-in-prompt").style.height = "15%";
+                document.getElementById("section-container").style.margin = "auto";
+                generalDefinition.hidden = true;
+            }
+        });
+    
+        document.addEventListener('DOMContentLoaded', function() {
+            var generalSlider = document.getElementById("general-slider");
+            var generalOutput = document.getElementById("general-value-text");
+            var generalEmojiValue = document.getElementById("general-emoji");
+            var generalColor;
+    
+            function updateGeneralSelectBasedOnSlider() {
+                generalOutput.innerHTML = generalSlider.value;
+    
+                for (var i = 0; i < generalEmojiValue.options.length; i++) {
+                    if (parseInt(generalEmojiValue.options[i].value) === parseInt(generalSlider.value)) {
+                        generalEmojiValue.value = generalEmojiValue.options[i].value;
+                        break;
+                    }
+                }
+    
+                if (generalSlider.value >= 0 && generalSlider.value < 10) {
+                    generalColor = '#ff0000'; // Red for values 0-9
+                } else if (generalSlider.value >= 10 && generalSlider.value < 20) {
+                    generalColor = '#ff3300'; // Red-orange for values 10-19
+                } else if (generalSlider.value >= 20 && generalSlider.value < 30) {
+                    generalColor = '#ff6600'; // Orange for values 20-29
+                } else if (generalSlider.value >= 30 && generalSlider.value < 40) {
+                    generalColor = '#ff9900'; // Yellow-orange for values 30-39
+                } else if (generalSlider.value >= 40 && generalSlider.value < 50) {
+                    generalColor = '#ffcc00'; // Yellow for values 40-49
+                } else if (generalSlider.value >= 50 && generalSlider.value < 60) {
+                    generalColor = '#ffff00'; // Light yellow for values 50-59
+                } else if (generalSlider.value >= 60 && generalSlider.value < 70) {
+                    generalColor = '#ccff33'; // Light green for values 60-69
+                } else if (generalSlider.value >= 70 && generalSlider.value < 80) {
+                    generalColor = '#99ff33'; // Green for values 70-79
+                } else if (generalSlider.value >= 80 && generalSlider.value < 90) {
+                    generalColor = '#66ff33'; // Bright green for values 80-89
+                } else if (generalSlider.value >= 90 && generalSlider.value <= 100) {
+                    generalColor = '#33ff33'; // Brightest green for values 90-100
+                } else {
+                    generalColor = '#ddd'; // Default color
+                }
+                generalSlider.style.background = generalColor;
+            }
+    
+            updateGeneralSelectBasedOnSlider();
+    
+            generalSlider.oninput = updateGeneralSelectBasedOnSlider;
+        });
+    </script>
+    <!-- Happiness Script -->
+    <script>
+        // OnClick Event Listener Happiness
+        // Prevent Default:
+        document.getElementById("happiness-container-link").addEventListener("click", function(event) {
+            event.preventDefault();
+            
+            // Assign var to html elements
+            var happinessContainer = document.getElementById("happiness-container");     
+            var happinessArrow = document.getElementById("happiness-drop-down-arrow");
+            var happinessDefinition = document.getElementById("happiness-definition");
+
+            
+            // if statement to determine if 
+            if (happinessContainer.classList.contains('emotion-container')) {
+                // Expand
+                happinessContainer.classList.remove('emotion-container');
+                happinessContainer.classList.add('emotion-container-expanded');
+                happinessArrow.classList.remove('drop-down-arrow');
+                happinessArrow.classList.add('drop-down-arrow-expanded');
+                document.getElementById("section-container").style.height = "160vh";
+                happinessDefinition.hidden = false;
+            }
+            else {
+                // Collapse
+                happinessContainer.classList.remove('emotion-container-expanded');
+                happinessContainer.classList.add('emotion-container');
+                happinessArrow.classList.remove('drop-down-arrow-expanded');
+                happinessArrow.classList.add('drop-down-arrow');
+                document.getElementById("section-container").style.height = "100vh";
+                happinessDefinition.hidden = true;
+            }
+            
+        });
+        // 
+        document.addEventListener('DOMContentLoaded', function() {
+            var happinessSlider = document.getElementById("happiness-slider");
+            var happinessOutput = document.getElementById("happiness-value-text");
+            var happinessEmojiValue = document.getElementById("happiness-emoji");
+            var happinessColor;
+            
+            function updateHappinessSelectBasedOnSlider() {
+                happinessOutput.innerHTML = happinessSlider.value;  
+
+                for (var i = 0; i < happinessEmojiValue.options.length; i++) {
+                    if (parseInt(happinessEmojiValue.options[i].value) === parseInt(happinessSlider.value)) {
+                        happinessEmojiValue.value = happinessEmojiValue.options[i].value;
+                        break;
+                    }
+
+                }
+                if (happinessSlider.value >= 0 && happinessSlider.value < 10) {
+                    happinessColor = '#ff0000'; // Red for values 0-9
+                } else if (happinessSlider.value >= 10 && happinessSlider.value < 20) {
+                    happinessColor = '#ff3300'; // Red-orange for values 10-19
+                } else if (happinessSlider.value >= 20 && happinessSlider.value < 30) {
+                    happinessColor = '#ff6600'; // Orange for values 20-29
+                } else if (happinessSlider.value >= 30 && happinessSlider.value < 40) {
+                    happinessColor = '#ff9900'; // Yellow-orange for values 30-39
+                } else if (happinessSlider.value >= 40 && happinessSlider.value < 50) {
+                    happinessColor = '#ffcc00'; // Yellow for values 40-49
+                } else if (happinessSlider.value >= 50 && happinessSlider.value < 60) {
+                    happinessColor = '#ffff00'; // Light yellow for values 50-59
+                } else if (happinessSlider.value >= 60 && happinessSlider.value < 70) {
+                    happinessColor = '#ccff33'; // Light green for values 60-69
+                } else if (happinessSlider.value >= 70 && happinessSlider.value < 80) {
+                    happinessColor = '#99ff33'; // Green for values 70-79
+                } else if (happinessSlider.value >= 80 && happinessSlider.value < 90) {
+                    happinessColor = '#66ff33'; // Bright green for values 80-89
+                } else if (happinessSlider.value >= 90 && happinessSlider.value <= 100) {
+                    happinessColor = '#33ff33'; // Brightest green for values 90-100
+                } else {
+                    happinessColor = '#ddd'; // Default color
+                }
+                happinessSlider.style.background = happinessColor;
+            }
+
+            updateHappinessSelectBasedOnSlider();
+        
+            happinessSlider.oninput = updateHappinessSelectBasedOnSlider;
+        
+        });
+    </script>
+    <!-- Contentment Script -->
+    <script>
+         // OnClick Event Listener Contentment
+        // Prevent Default:
+        document.getElementById("contentment-container-link").addEventListener("click", function(event) {
+            event.preventDefault();
+            
+            // Assign var to html elements
+            var contentmentContainer = document.getElementById("contentment-container");     
+            var contentmentArrow = document.getElementById("contentment-drop-down-arrow");
+            var contentmentDefinition = document.getElementById("contentment-definition");
+
+            
+            // if statement to determine if 
+            if (contentmentContainer.classList.contains('emotion-container')) {
+                // Expand
+                contentmentContainer.classList.remove('emotion-container');
+                contentmentContainer.classList.add('emotion-container-expanded');
+                contentmentArrow.classList.remove('drop-down-arrow');
+                contentmentArrow.classList.add('drop-down-arrow-expanded');
+                document.getElementById("section-container").style.height = "160vh";
+                contentmentDefinition.hidden = false;
+            }
+            else {
+                // Collapse
+                contentmentContainer.classList.remove('emotion-container-expanded');
+                contentmentContainer.classList.add('emotion-container');
+                contentmentArrow.classList.remove('drop-down-arrow-expanded');
+                contentmentArrow.classList.add('drop-down-arrow');
+                document.getElementById("section-container").style.height = "100vh";
+                contentmentDefinition.hidden = true;
+            }
+            
+        });
+        // 
+        document.addEventListener('DOMContentLoaded', function() {
+            var contentmentSlider = document.getElementById("contentment-slider");
+            var contentmentOutput = document.getElementById("contentment-value-text");
+            var contentmentEmojiValue = document.getElementById("contentment-emoji");
+            var contentmentColor;
+            
+            function updateContentmentSelectBasedOnSlider() {
+                contentmentOutput.innerHTML = contentmentSlider.value;  
+
+                for (var i = 0; i < contentmentEmojiValue.options.length; i++) {
+                    if (parseInt(contentmentEmojiValue.options[i].value) === parseInt(contentmentSlider.value)) {
+                        contentmentEmojiValue.value = contentmentEmojiValue.options[i].value;
+                        break;
+                    }
+
+                }
+                if (contentmentSlider.value >= 0 && contentmentSlider.value < 10) {
+                    contentmentColor = '#ff0000'; // Red for values 0-9
+                } else if (contentmentSlider.value >= 10 && contentmentSlider.value < 20) {
+                    contentmentColor = '#ff3300'; // Red-orange for values 10-19
+                } else if (contentmentSlider.value >= 20 && contentmentSlider.value < 30) {
+                    contentmentColor = '#ff6600'; // Orange for values 20-29
+                } else if (contentmentSlider.value >= 30 && contentmentSlider.value < 40) {
+                    contentmentColor = '#ff9900'; // Yellow-orange for values 30-39
+                } else if (contentmentSlider.value >= 40 && contentmentSlider.value < 50) {
+                    contentmentColor = '#ffcc00'; // Yellow for values 40-49
+                } else if (contentmentSlider.value >= 50 && contentmentSlider.value < 60) {
+                    contentmentColor = '#ffff00'; // Light yellow for values 50-59
+                } else if (contentmentSlider.value >= 60 && contentmentSlider.value < 70) {
+                    contentmentColor = '#ccff33'; // Light green for values 60-69
+                } else if (contentmentSlider.value >= 70 && contentmentSlider.value < 80) {
+                    contentmentColor = '#99ff33'; // Green for values 70-79
+                } else if (contentmentSlider.value >= 80 && contentmentSlider.value < 90) {
+                    contentmentColor = '#66ff33'; // Bright green for values 80-89
+                } else if (contentmentSlider.value >= 90 && contentmentSlider.value <= 100) {
+                    contentmentColor = '#33ff33'; // Brightest green for values 90-100
+                } else {
+                    contentmentColor = '#ddd'; // Default color
+                }
+                contentmentSlider.style.background = contentmentColor;
+            }
+
+            updateContentmentSelectBasedOnSlider();
+        
+            contentmentSlider.oninput = updateContentmentSelectBasedOnSlider;
+        
+        });
+        
+    </script>
+    <!-- Peace Script -->
+    <script>
+        // OnClick Event Listener Peace
+        // Prevent Default:
+        document.getElementById("peace-container-link").addEventListener("click", function(event) {
+            event.preventDefault();
+            
+            // Assign var to html elements
+            var peaceContainer = document.getElementById("peace-container");     
+            var peaceArrow = document.getElementById("peace-drop-down-arrow");
+            var peaceDefinition = document.getElementById("peace-definition");
+
+            
+            // if statement to determine if 
+            if (peaceContainer.classList.contains('emotion-container')) {
+                // Expand
+                peaceContainer.classList.remove('emotion-container');
+                peaceContainer.classList.add('emotion-container-expanded');
+                peaceArrow.classList.remove('drop-down-arrow');
+                peaceArrow.classList.add('drop-down-arrow-expanded');
+                document.getElementById("section-container").style.height = "160vh";
+                peaceDefinition.hidden = false;
+            }
+            else {
+                // Collapse
+                peaceContainer.classList.remove('emotion-container-expanded');
+                peaceContainer.classList.add('emotion-container');
+                peaceArrow.classList.remove('drop-down-arrow-expanded');
+                peaceArrow.classList.add('drop-down-arrow');
+                document.getElementById("section-container").style.height = "100vh";
+                peaceDefinition.hidden = true;
+            }
+            
+        });
+        // 
+        document.addEventListener('DOMContentLoaded', function() {
+            var peaceSlider = document.getElementById("peace-slider");
+            var peaceOutput = document.getElementById("peace-value-text");
+            var peaceEmojiValue = document.getElementById("peace-emoji");
+            var peaceColor;
+            
+            function updatePeaceSelectBasedOnSlider() {
+                peaceOutput.innerHTML = peaceSlider.value;  
+
+                for (var i = 0; i < peaceEmojiValue.options.length; i++) {
+                    if (parseInt(peaceEmojiValue.options[i].value) === parseInt(peaceSlider.value)) {
+                        peaceEmojiValue.value = peaceEmojiValue.options[i].value;
+                        break;
+                    }
+
+                }
+                if (peaceSlider.value >= 0 && peaceSlider.value < 10) {
+                    peaceColor = '#ff0000'; // Red for values 0-9
+                } else if (peaceSlider.value >= 10 && peaceSlider.value < 20) {
+                    contentmentColor = '#ff3300'; // Red-orange for values 10-19
+                } else if (peaceSlider.value >= 20 && peaceSlider.value < 30) {
+                    peaceColor = '#ff6600'; // Orange for values 20-29
+                } else if (peaceSlider.value >= 30 && peaceSlider.value < 40) {
+                    peaceColor = '#ff9900'; // Yellow-orange for values 30-39
+                } else if (peaceSlider.value >= 40 && peaceSlider.value < 50) {
+                    peaceColor = '#ffcc00'; // Yellow for values 40-49
+                } else if (peaceSlider.value >= 50 && peaceSlider.value < 60) {
+                    peaceColor = '#ffff00'; // Light yellow for values 50-59
+                } else if (peaceSlider.value >= 60 && peaceSlider.value < 70) {
+                    peaceColor = '#ccff33'; // Light green for values 60-69
+                } else if (peaceSlider.value >= 70 && peaceSlider.value < 80) {
+                    peaceColor = '#99ff33'; // Green for values 70-79
+                } else if (peaceSlider.value >= 80 && peaceSlider.value < 90) {
+                    peaceColor = '#66ff33'; // Bright green for values 80-89
+                } else if (peaceSlider.value >= 90 && peaceSlider.value <= 100) {
+                    peaceColor = '#33ff33'; // Brightest green for values 90-100
+                } else {
+                    peaceColor = '#ddd'; // Default color
+                }
+                peaceSlider.style.background = peaceColor;
+            }
+
+            updatePeaceSelectBasedOnSlider();
+        
+            peaceSlider.oninput = updatePeaceSelectBasedOnSlider;
+        
+        });
+    </script>
+    <!-- Fulfillment Script -->
+    <script>
+        // OnClick Event Listener Fulfillment
+        // Prevent Default:
+        document.getElementById("fulfillment-container-link").addEventListener("click", function(event) {
+            event.preventDefault();
+            
+            // Assign var to html elements
+            var fulfillmentContainer = document.getElementById("fulfillment-container");     
+            var fulfillmentArrow = document.getElementById("fulfillment-drop-down-arrow");
+            var fulfillmentDefinition = document.getElementById("fulfillment-definition");
+
+            
+            // if statement to determine if 
+            if (fulfillmentContainer.classList.contains('emotion-container')) {
+                // Expand
+                fulfillmentContainer.classList.remove('emotion-container');
+                fulfillmentContainer.classList.add('emotion-container-expanded');
+                fulfillmentArrow.classList.remove('drop-down-arrow');
+                fulfillmentArrow.classList.add('drop-down-arrow-expanded');
+                document.getElementById("section-container").style.height = "160vh";
+                fulfillmentDefinition.hidden = false;
+            }
+            else {
+                // Collapse
+                fulfillmentContainer.classList.remove('emotion-container-expanded');
+                fulfillmentContainer.classList.add('emotion-container');
+                fulfillmentArrow.classList.remove('drop-down-arrow-expanded');
+                fulfillmentArrow.classList.add('drop-down-arrow');
+                document.getElementById("section-container").style.height = "100vh";
+                fulfillmentDefinition.hidden = true;
+            }
+            
+        });
+        // 
+        document.addEventListener('DOMContentLoaded', function() {
+            var fulfillmentSlider = document.getElementById("fulfillment-slider");
+            var fulfillmentOutput = document.getElementById("fulfillment-value-text");
+            var fulfillmentEmojiValue = document.getElementById("fulfillment-emoji");
+            var fulfillmentColor;
+            
+            function updateFulfillmentSelectBasedOnSlider() {
+                fulfillmentOutput.innerHTML = fulfillmentSlider.value;  
+
+                for (var i = 0; i < fulfillmentEmojiValue.options.length; i++) {
+                    if (parseInt(fulfillmentEmojiValue.options[i].value) === parseInt(fulfillmentSlider.value)) {
+                        fulfillmentEmojiValue.value = fulfillmentEmojiValue.options[i].value;
+                        break;
+                    }
+
+                }
+                if (fulfillmentSlider.value >= 0 && fulfillmentSlider.value < 10) {
+                    fulfillmentColor = '#ff0000'; // Red for values 0-9
+                } else if (fulfillmentSlider.value >= 10 && fulfillmentSlider.value < 20) {
+                    fulfillmentColor = '#ff3300'; // Red-orange for values 10-19
+                } else if (fulfillmentSlider.value >= 20 && fulfillmentSlider.value < 30) {
+                    fulfillmentColor = '#ff6600'; // Orange for values 20-29
+                } else if (fulfillmentSlider.value >= 30 && fulfillmentSlider.value < 40) {
+                    fulfillmentColor = '#ff9900'; // Yellow-orange for values 30-39
+                } else if (fulfillmentSlider.value >= 40 && fulfillmentSlider.value < 50) {
+                    fulfillmentColor = '#ffcc00'; // Yellow for values 40-49
+                } else if (fulfillmentSlider.value >= 50 && fulfillmentSlider.value < 60) {
+                    fulfillmentColor = '#ffff00'; // Light yellow for values 50-59
+                } else if (fulfillmentSlider.value >= 60 && fulfillmentSlider.value < 70) {
+                    fulfillmentColor = '#ccff33'; // Light green for values 60-69
+                } else if (fulfillmentSlider.value >= 70 && fulfillmentSlider.value < 80) {
+                    fulfillmentColor = '#99ff33'; // Green for values 70-79
+                } else if (fulfillmentSlider.value >= 80 && fulfillmentSlider.value < 90) {
+                    fulfillmentColor = '#66ff33'; // Bright green for values 80-89
+                } else if (fulfillmentSlider.value >= 90 && fulfillmentSlider.value <= 100) {
+                    fulfillmentColor = '#33ff33'; // Brightest green for values 90-100
+                } else {
+                    fulfillmentColor = '#ddd'; // Default color
+                }
+                fulfillmentSlider.style.background = fulfillmentColor;
+            }
+
+            updateFulfillmentSelectBasedOnSlider();
+        
+            fulfillmentSlider.oninput = updateFulfillmentSelectBasedOnSlider;
+        
+        });
+    </script>
+    <!-- Adventurous Script -->
+    <script>
+        // OnClick Event Listener Adventurous
+        // Prevent Default:
+        document.getElementById("adventurous-container-link").addEventListener("click", function(event) {
+            event.preventDefault();
+            
+            // Assign var to html elements
+            var adventurousContainer = document.getElementById("adventurous-container");     
+            var adventurousArrow = document.getElementById("adventurous-drop-down-arrow");
+            var adventurousDefinition = document.getElementById("adventurous-definition");
+
+            
+            // if statement to determine if 
+            if (adventurousContainer.classList.contains('emotion-container')) {
+                // Expand
+                adventurousContainer.classList.remove('emotion-container');
+                adventurousContainer.classList.add('emotion-container-expanded');
+                adventurousArrow.classList.remove('drop-down-arrow');
+                adventurousArrow.classList.add('drop-down-arrow-expanded');
+                document.getElementById("section-container").style.height = "160vh";
+                adventurousDefinition.hidden = false;
+            }
+            else {
+                // Collapse
+                adventurousContainer.classList.remove('emotion-container-expanded');
+                adventurousContainer.classList.add('emotion-container');
+                adventurousArrow.classList.remove('drop-down-arrow-expanded');
+                adventurousArrow.classList.add('drop-down-arrow');
+                document.getElementById("section-container").style.height = "100vh";
+                adventurousDefinition.hidden = true;
+            }
+            
+        });
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            var adventurousSlider = document.getElementById("adventurous-slider");
+            var adventurousOutput = document.getElementById("adventurous-value-text");
+            var adventurousEmojiValue = document.getElementById("adventurous-emoji");
+            var adventurousColor;
+            
+            function updateAdventurousSelectBasedOnSlider() {
+                adventurousOutput.innerHTML = adventurousSlider.value;  
+
+                for (var i = 0; i < adventurousEmojiValue.options.length; i++) {
+                    if (parseInt(adventurousEmojiValue.options[i].value) === parseInt(adventurousSlider.value)) {
+                        adventurousEmojiValue.value = adventurousEmojiValue.options[i].value;
+                        break;
+                    }
+
+                }
+                if (adventurousSlider.value >= 0 && adventurousSlider.value < 10) {
+                    adventurousColor = '#ff0000'; // Red for values 0-9
+                } else if (adventurousSlider.value >= 10 && adventurousSlider.value < 20) {
+                    adventurousColor = '#ff3300'; // Red-orange for values 10-19
+                } else if (adventurousSlider.value >= 20 && adventurousSlider.value < 30) {
+                    adventurousColor = '#ff6600'; // Orange for values 20-29
+                } else if (adventurousSlider.value >= 30 && adventurousSlider.value < 40) {
+                    adventurousColor = '#ff9900'; // Yellow-orange for values 30-39
+                } else if (adventurousSlider.value >= 40 && adventurousSlider.value < 50) {
+                    adventurousColor = '#ffcc00'; // Yellow for values 40-49
+                } else if (adventurousSlider.value >= 50 && adventurousSlider.value < 60) {
+                    adventurousColor = '#ffff00'; // Light yellow for values 50-59
+                } else if (adventurousSlider.value >= 60 && adventurousSlider.value < 70) {
+                    adventurousColor = '#ccff33'; // Light green for values 60-69
+                } else if (adventurousSlider.value >= 70 && adventurousSlider.value < 80) {
+                    adventurousColor = '#99ff33'; // Green for values 70-79
+                } else if (adventurousSlider.value >= 80 && adventurousSlider.value < 90) {
+                    adventurousColor = '#66ff33'; // Bright green for values 80-89
+                } else if (adventurousSlider.value >= 90 && adventurousSlider.value <= 100) {
+                    adventurousColor = '#33ff33'; // Brightest green for values 90-100
+                } else {
+                    adventurousColor = '#ddd'; // Default color
+                }
+                adventurousSlider.style.background = adventurousColor;
+            }
+
+            updateAdventurousSelectBasedOnSlider();
+        
+            adventurousSlider.oninput = updateAdventurousSelectBasedOnSlider;
+        
+        });
+    </script>
+    <!-- Drive Script -->
+    <script>
+        // OnClick Event Listener Drive
+        // Prevent Default:
+        document.getElementById("drive-container-link").addEventListener("click", function(event) {
+            event.preventDefault();
+            
+            // Assign var to html elements
+            var driveContainer = document.getElementById("drive-container");     
+            var driveArrow = document.getElementById("drive-drop-down-arrow");
+            var driveDefinition = document.getElementById("drive-definition");
+    
+            
+            // if statement to determine if 
+            if (driveContainer.classList.contains('emotion-container')) {
+                // Expand
+                driveContainer.classList.remove('emotion-container');
+                driveContainer.classList.add('emotion-container-expanded');
+                driveArrow.classList.remove('drop-down-arrow');
+                driveArrow.classList.add('drop-down-arrow-expanded');
+                document.getElementById("section-container").style.height = "160vh";
+                driveDefinition.hidden = false;
+            }
+            else {
+                // Collapse
+                driveContainer.classList.remove('emotion-container-expanded');
+                driveContainer.classList.add('emotion-container');
+                driveArrow.classList.remove('drop-down-arrow-expanded');
+                driveArrow.classList.add('drop-down-arrow');
+                document.getElementById("section-container").style.height = "100vh";
+                driveDefinition.hidden = true;
+            }
+            
+        });
+        // 
+        document.addEventListener('DOMContentLoaded', function() {
+            var driveSlider = document.getElementById("drive-slider");
+            var driveOutput = document.getElementById("drive-value-text");
+            var driveEmojiValue = document.getElementById("drive-emoji");
+            var driveColor;
+            
+            function updateDriveSelectBasedOnSlider() {
+                driveOutput.innerHTML = driveSlider.value;  
+    
+                for (var i = 0; i < driveEmojiValue.options.length; i++) {
+                    if (parseInt(driveEmojiValue.options[i].value) === parseInt(driveSlider.value)) {
+                        driveEmojiValue.value = driveEmojiValue.options[i].value;
+                        break;
+                    }
+                }
+    
+                if (driveSlider.value >= 0 && driveSlider.value < 10) {
+                    driveColor = '#ff0000'; // Red for values 0-9
+                } else if (driveSlider.value >= 10 && driveSlider.value < 20) {
+                    driveColor = '#ff3300'; // Red-orange for values 10-19
+                } else if (driveSlider.value >= 20 && driveSlider.value < 30) {
+                    driveColor = '#ff6600'; // Orange for values 20-29
+                } else if (driveSlider.value >= 30 && driveSlider.value < 40) {
+                    driveColor = '#ff9900'; // Yellow-orange for values 30-39
+                } else if (driveSlider.value >= 40 && driveSlider.value < 50) {
+                    driveColor = '#ffcc00'; // Yellow for values 40-49
+                } else if (driveSlider.value >= 50 && driveSlider.value < 60) {
+                    driveColor = '#ffff00'; // Light yellow for values 50-59
+                } else if (driveSlider.value >= 60 && driveSlider.value < 70) {
+                    driveColor = '#ccff33'; // Light green for values 60-69
+                } else if (driveSlider.value >= 70 && driveSlider.value < 80) {
+                    driveColor = '#99ff33'; // Green for values 70-79
+                } else if (driveSlider.value >= 80 && driveSlider.value < 90) {
+                    driveColor = '#66ff33'; // Bright green for values 80-89
+                } else if (driveSlider.value >= 90 && driveSlider.value <= 100) {
+                    driveColor = '#33ff33'; // Brightest green for values 90-100
+                } else {
+                    driveColor = '#ddd'; // Default color
+                }
+                driveSlider.style.background = driveColor;
+            }
+    
+            updateDriveSelectBasedOnSlider();
+        
+            driveSlider.oninput = updateDriveSelectBasedOnSlider;
+        
+        });
+    </script>
+    <!-- Willpower Script -->
+    <script>
+        // OnClick Event Listener Willpower
+        // Prevent Default:
+        document.getElementById("willpower-container-link").addEventListener("click", function(event) {
+            event.preventDefault();
+            
+            // Assign var to html elements
+            var willpowerContainer = document.getElementById("willpower-container");     
+            var willpowerArrow = document.getElementById("willpower-drop-down-arrow");
+            var willpowerDefinition = document.getElementById("willpower-definition");
+
+            
+            // if statement to determine if 
+            if (willpowerContainer.classList.contains('emotion-container')) {
+                // Expand
+                willpowerContainer.classList.remove('emotion-container');
+                willpowerContainer.classList.add('emotion-container-expanded');
+                willpowerArrow.classList.remove('drop-down-arrow');
+                willpowerArrow.classList.add('drop-down-arrow-expanded');
+                document.getElementById("section-container").style.height = "160vh";
+                willpowerDefinition.hidden = false;
+            }
+            else {
+                // Collapse
+                willpowerContainer.classList.remove('emotion-container-expanded');
+                willpowerContainer.classList.add('emotion-container');
+                willpowerArrow.classList.remove('drop-down-arrow-expanded');
+                willpowerArrow.classList.add('drop-down-arrow');
+                document.getElementById("section-container").style.height = "100vh";
+                willpowerDefinition.hidden = true;
+            }
+            
+        });
+        // 
+        document.addEventListener('DOMContentLoaded', function() {
+            var willpowerSlider = document.getElementById("willpower-slider");
+            var willpowerOutput = document.getElementById("willpower-value-text");
+            var willpowerEmojiValue = document.getElementById("willpower-emoji");
+            var willpowerColor;
+            
+            function updateWillpowerSelectBasedOnSlider() {
+                willpowerOutput.innerHTML = willpowerSlider.value;  
+
+                for (var i = 0; i < willpowerEmojiValue.options.length; i++) {
+                    if (parseInt(willpowerEmojiValue.options[i].value) === parseInt(willpowerSlider.value)) {
+                        willpowerEmojiValue.value = willpowerEmojiValue.options[i].value;
+                        break;
+                    }
+
+                }
+                if (willpowerSlider.value >= 0 && willpowerSlider.value < 10) {
+                    willpowerColor = '#ff0000'; // Red for values 0-9
+                } else if (willpowerSlider.value >= 10 && willpowerSlider.value < 20) {
+                    willpowerColor = '#ff3300'; // Red-orange for values 10-19
+                } else if (willpowerSlider.value >= 20 && willpowerSlider.value < 30) {
+                    willpowerColor = '#ff6600'; // Orange for values 20-29
+                } else if (willpowerSlider.value >= 30 && willpowerSlider.value < 40) {
+                    willpowerColor = '#ff9900'; // Yellow-orange for values 30-39
+                } else if (willpowerSlider.value >= 40 && willpowerSlider.value < 50) {
+                    willpowerColor = '#ffcc00'; // Yellow for values 40-49
+                } else if (willpowerSlider.value >= 50 && willpowerSlider.value < 60) {
+                    willpowerColor = '#ffff00'; // Light yellow for values 50-59
+                } else if (willpowerSlider.value >= 60 && willpowerSlider.value < 70) {
+                    willpowerColor = '#ccff33'; // Light green for values 60-69
+                } else if (willpowerSlider.value >= 70 && willpowerSlider.value < 80) {
+                    willpowerColor = '#99ff33'; // Green for values 70-79
+                } else if (willpowerSlider.value >= 80 && willpowerSlider.value < 90) {
+                    willpowerColor = '#66ff33'; // Bright green for values 80-89
+                } else if (willpowerSlider.value >= 90 && willpowerSlider.value <= 100) {
+                    willpowerColor = '#33ff33'; // Brightest green for values 90-100
+                } else {
+                    willpowerColor = '#ddd'; // Default color
+                }
+                willpowerSlider.style.background = willpowerColor;
+            }
+
+            updateWillpowerSelectBasedOnSlider();
+        
+            willpowerSlider.oninput = updateWillpowerSelectBasedOnSlider;
+        
+        });
+    </script>
+    <!-- Excitement Script -->
+    <script>
+        // OnClick Event Listener Excitement
+        // Prevent Default:
+        document.getElementById("excitement-container-link").addEventListener("click", function(event) {
+            event.preventDefault();
+    
+            // Assign var to html elements
+            var excitementContainer = document.getElementById("excitement-container");
+            var excitementArrow = document.getElementById("excitement-drop-down-arrow");
+            var excitementDefinition = document.getElementById("excitement-definition");
+    
+            // if statement to determine if 
+            if (excitementContainer.classList.contains('emotion-container')) {
+                // Expand
+                excitementContainer.classList.remove('emotion-container');
+                excitementContainer.classList.add('emotion-container-expanded');
+                excitementArrow.classList.remove('drop-down-arrow');
+                excitementArrow.classList.add('drop-down-arrow-expanded');
+                document.getElementById("section-container").style.height = "160vh";
+                excitementDefinition.hidden = false;
+            } else {
+                // Collapse
+                excitementContainer.classList.remove('emotion-container-expanded');
+                excitementContainer.classList.add('emotion-container');
+                excitementArrow.classList.remove('drop-down-arrow-expanded');
+                excitementArrow.classList.add('drop-down-arrow');
+                document.getElementById("section-container").style.height = "100vh";
+                excitementDefinition.hidden = true;
+            }
+    
+        });
+    
+        document.addEventListener('DOMContentLoaded', function() {
+            var excitementSlider = document.getElementById("excitement-slider");
+            var excitementOutput = document.getElementById("excitement-value-text");
+            var excitementEmojiValue = document.getElementById("excitement-emoji");
+            var excitementColor;
+    
+            function updateExcitementSelectBasedOnSlider() {
+                excitementOutput.innerHTML = excitementSlider.value;
+    
+                for (var i = 0; i < excitementEmojiValue.options.length; i++) {
+                    if (parseInt(excitementEmojiValue.options[i].value) === parseInt(excitementSlider.value)) {
+                        excitementEmojiValue.value = excitementEmojiValue.options[i].value;
+                        break;
+                    }
+                }
+    
+                if (excitementSlider.value >= 0 && excitementSlider.value < 10) {
+                    excitementColor = '#ff0000'; // Red for values 0-9
+                } else if (excitementSlider.value >= 10 && excitementSlider.value < 20) {
+                    excitementColor = '#ff3300'; // Red-orange for values 10-19
+                } else if (excitementSlider.value >= 20 && excitementSlider.value < 30) {
+                    excitementColor = '#ff6600'; // Orange for values 20-29
+                } else if (excitementSlider.value >= 30 && excitementSlider.value < 40) {
+                    excitementColor = '#ff9900'; // Yellow-orange for values 30-39
+                } else if (excitementSlider.value >= 40 && excitementSlider.value < 50) {
+                    excitementColor = '#ffcc00'; // Yellow for values 40-49
+                } else if (excitementSlider.value >= 50 && excitementSlider.value < 60) {
+                    excitementColor = '#ffff00'; // Light yellow for values 50-59
+                } else if (excitementSlider.value >= 60 && excitementSlider.value < 70) {
+                    excitementColor = '#ccff33'; // Light green for values 60-69
+                } else if (excitementSlider.value >= 70 && excitementSlider.value < 80) {
+                    excitementColor = '#99ff33'; // Green for values 70-79
+                } else if (excitementSlider.value >= 80 && excitementSlider.value < 90) {
+                    excitementColor = '#66ff33'; // Bright green for values 80-89
+                } else if (excitementSlider.value >= 90 && excitementSlider.value <= 100) {
+                    excitementColor = '#33ff33'; // Brightest green for values 90-100
+                } else {
+                    excitementColor = '#ddd'; // Default color
+                }
+                excitementSlider.style.background = excitementColor;
+            }
+    
+            updateExcitementSelectBasedOnSlider();
+    
+            excitementSlider.oninput = updateExcitementSelectBasedOnSlider;
+    
+        });
+    </script>
+
+    <!-- Store To JSON Script -->
+    <script>
+        document.getElementById('general-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            console.log("working");
+
+            var latestLog = new FormData(document.getElementById('general-form'));
+            var latestLogData = {};
+
+            for (const [key, value] of latestLog) {
+                latestLogData[key] = value;
+                console.log(latestLog);
+            }
+            
+            console.log(JSON.stringify(latestLogData));
+        });
+        
+        
+    </script>
+</body>
+</html>

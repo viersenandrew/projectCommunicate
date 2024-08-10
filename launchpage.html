@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="launchpage.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="title" id="app-title">The Relationship Check-In</h1>
+    <div class="navbar_container" id="animate-all">
+    <nav id="navbar">
+        <div class="nav-outline one" id="outline1">
+            <a class="page-link" href="check-in.html" id="check-in">
+                <abbr title="section">Check In</abbr>
+            </a>
+        </div>
+        <div class="nav-outline two" id="outline2">
+            <a class="page-link" href="journal.html" id="journal">
+                <abbr title="test">Journal</abbr>
+            </a>
+        </div>
+        <div class="nav-outline three" id="outline3">
+            <a class="page-link" href="timeline.html" id="timeline">
+                <abbr title="section">Timeline</abbr>
+            </a>
+        </div>
+        <div class="nav-outline four" id="outline4">
+            <a class="page-link" href="discussions.html" id="discussions">
+                <abbr title="section">Discussions</abbr>
+            </a>
+        </div>   
+    </nav>
+    <script>
+        document.getElementById("check-in").addEventListener("click", function(event) {
+            event.preventDefault();
+
+            document.getElementById("check-in").classList.add('fade');
+            document.getElementById("journal").classList.add('fade');
+            document.getElementById("timeline").classList.add('fade');
+            document.getElementById("discussions").classList.add('fade');
+            
+            document.getElementById("outline1").classList.remove('nav-outline');
+            document.getElementById("outline1").classList.remove('one');
+            document.getElementById('outline1').classList.add('resize-reposition-top-left');
+            document.getElementById("navbar").classList.add('animate-top-left');
+            
+            
+            setTimeout(function() {
+                window.location.href = event.target.href;
+            }, 1750);
+        });
+    </script>
+    <script>
+        document.getElementById("journal").addEventListener("click", function(event) {
+            event.preventDefault();
+            
+            document.getElementById("app-title").classList.add('fade');
+
+            document.getElementById("check-in").classList.add('fade');
+            document.getElementById("journal").classList.add('fade');
+            document.getElementById("timeline").classList.add('fade');
+            document.getElementById("discussions").classList.add('fade');
+            
+            document.getElementById("outline2").classList.remove('nav-outline');
+            document.getElementById("outline2").classList.remove('two');
+            document.getElementById("outline2").classList.add('resize-reposition-top-right');
+            document.getElementById("navbar").classList.add('animate-top-right');
+            setTimeout(function() {
+                window.location.href = event.target.href;
+            }, 1750);
+        });
+    </script>
+    <script>
+        document.getElementById("timeline").addEventListener("click", function(event) {
+            event.preventDefault();
+            
+            document.getElementById("check-in").classList.add('fade');
+            document.getElementById("journal").classList.add('fade');
+            document.getElementById("timeline").classList.add('fade');
+            document.getElementById("discussions").classList.add('fade');
+            
+            document.getElementById("navbar").classList.add('animate-bottom-left');
+            setTimeout(function() {
+                window.location.href = event.target.href;
+            }, 1750);
+        });
+    </script>
+    <script>
+        document.getElementById("discussions").addEventListener("click", function(event) {
+            event.preventDefault();
+            
+            document.getElementById("check-in").classList.add('fade');
+            document.getElementById("journal").classList.add('fade');
+            document.getElementById("timeline").classList.add('fade');
+            document.getElementById("discussions").classList.add('fade');
+            
+            document.getElementById("navbar").classList.add('animate-bottom-right');
+            setTimeout(function() {
+                window.location.href = event.target.href;
+            }, 1750);
+        });
+    </script>
+</div>
+<div class="login">
+    <p><a id="logging">Login</a></p>
+    <br>
+    <p><a id="logging">Sign Up</a></p>
+</div>
+</body>
+</html>
