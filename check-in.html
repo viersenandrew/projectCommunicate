@@ -14,55 +14,61 @@
             <div class="bottom-left" id="bottom-left"></div>
             <div class="bottom-right" id="bottom-right"></div>
         </div>
-    </div>
-    <form id="general-form">
-        <section class="header-container">
-            <div >
-                <h1 class="title">Check-In</h1>
-                <p class="title-description">test</p>
-            </div>
-            <!-- General -->
+</div>
+    <section class="header-container">
+        <div >
+            <h1 class="title">Check-In</h1>
+            <p class="title-description">
+                Often telling our partner how our day is going can put them in a position to understand our needs.
+            </p>
+            <p class="section-description">
+                Use the sliding bar below to show your partner your general well being, alternatively you can use 
+                the provided emojis or the color of the slider bar. 
+            </p>
+        </div>
+        <!-- General -->
+        
+        <div class="general-check-in-prompt" id="general-check-in-prompt">
+            <div class="general-emotion-widget-container">
             
-            <div class="general-check-in-prompt" id="general-check-in-prompt">
-                <div class="general-emotion-widget-container">
-                
-                    <div class="emotion" id="general">
-                        <div class="general-emotion-container" id="general-container">
-                            <a href="" class="emotion-text-container" id="general-container-link">
-                                <div>
-                                    <p class="emotion-text">General Well-Being</p>
-                                </div>
-                                <div class="drop-down-arrow" id="general-drop-down-arrow"></div>
-                            </a>
-                            <div class="slider-container">
-                                <input type="range" name="general-slider-value" name="-slider-value" class="slider" id="general-slider" min="5" max="100" value="60" step="5" required>
-                                <h4 class="slider-value-text" id="general-value-text">60</h4>
+                <div class="emotion" id="general">
+                    <div class="general-emotion-container" id="general-container">
+                        <a href="" class="emotion-text-container" id="general-container-link">
+                            <div>
+                                <p class="emotion-text">General Well-Being</p>
                             </div>
-                            <div class="emoji-container">
-                                <select class="emoji-selector" id="general-emoji" name="general-emoji-value">
-                                    <option value="10">&#128534</option>
-                                    <option value="20">&#128553</option>
-                                    <option value="30">&#128542</option>
-                                    <option value="40">&#128543</option>
-                                    <option value="50">&#128528</option>
-                                    <option value="60">&#128522</option>
-                                    <option value="70">&#128512</option>
-                                    <option value="80">&#128513</option>
-                                    <option value="90">&#128518</option>
-                                    <option value="100">&#128514</option>
-                                </select>
-                            </div>
-                            <br>
-                            <div class="emotion-definition" id="general-definition" hidden>
-                                <p>This is test text</p>
-                            </div>
+                            <div class="drop-down-arrow" id="general-drop-down-arrow"></div>
+                        </a>
+                        <div class="slider-container">
+                            <input type="range" name="general-slider-value" name="-slider-value" class="slider" id="general-slider" min="5" max="100" value="60" step="5" required>
+                            <h4 class="slider-value-text" id="general-value-text">60</h4>
+                        </div>
+                        <div class="emoji-container">
+                            <select class="emoji-selector" id="general-emoji" name="general-emoji-value">
+                                <option value="5">&#128534</option>
+                                <option value="10">&#128534</option>
+                                <option value="20">&#128553</option>
+                                <option value="30">&#128542</option>
+                                <option value="40">&#128543</option>
+                                <option value="50">&#128528</option>
+                                <option value="60">&#128522</option>
+                                <option value="70">&#128512</option>
+                                <option value="80">&#128513</option>
+                                <option value="90">&#128518</option>
+                                <option value="100">&#128514</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="emotion-definition" id="general-definition" hidden>
+                            <p class="definition-text">This is test text</p>
                         </div>
                     </div>
                 </div>
-                </div>
+            </div>
+            </div>
         
 
-            </section>
+        </section>
             <section class="section-container" id="section-container">
                 <div  class="check-in-prompt" id="check-in-prompt">
                     <div class="emotion-widget-container">
@@ -98,7 +104,7 @@
                                 </div>
                                 <br>
                                 <div class="emotion-definition" id="happiness-definition" hidden>
-                                    <p>This is test text</p>
+                                    <p class="definition-text">This is test text</p>
                                 </div>
                             </div>
                         </div>
@@ -133,7 +139,7 @@
                                 </div>
                                 <br>
                                 <div class="emotion-definition" id="contentment-definition" hidden>
-                                    <p>This is test text</p>
+                                    <p class="definition-text">This is test text</p>
                                 </div>
                             </div>
                         </div>
@@ -168,7 +174,7 @@
                                 </div>
                                 <br>
                             <div class="emotion-definition" id="peace-definition" hidden>
-                                <p>This is test text</p>
+                                <p class="definition-text">This is test text</p>
                             </div>
                             </div>
                         </div>
@@ -203,7 +209,7 @@
                                 </div>
                                 <br>
                                 <div class="emotion-definition" id="fulfillment-definition" hidden>
-                                    <p>This is test text</p>
+                                    <p class="definition-text">This is test text</p>
                                 </div>
                             </div>
                         </div>
@@ -238,7 +244,7 @@
                                 </div>
                                 <br>
                                 <div class="emotion-definition" id="adventurous-definition" hidden>
-                                    <p>This is test text</p>
+                                    <p class="definition-text">This is test text</p>
                                 </div>
                             </div>    
                         </div>
@@ -273,7 +279,7 @@
                                 </div>
                                 <br>
                                 <div class="emotion-definition" id="adventurous-definition" hidden>
-                                    <p>This is test text</p>
+                                    <p class="definition-text">This is test text</p>
                                 </div>
                                 
                             </div>    
@@ -309,7 +315,7 @@
                                 </div>
                                 <br>
                                 <div class="emotion-definition" id="willpower-definition" hidden>
-                                    <p>This is test text</p>
+                                    <p class="definition-text">This is test text</p>
                                 </div>
                             </div>    
                         
@@ -345,7 +351,7 @@
                                 </div>
                                 <br>
                                 <div class="emotion-definition" id="excitement-definition" hidden>
-                                    <p>This is test text</p>
+                                    <p class="definition-text">This is test text</p>
                                 </div>
                                 
                         
@@ -358,9 +364,52 @@
             <div class="submit-button-container">
                 <input type="submit" value="Post" name="submit" class="submit-button" id="submit-button">
             </div>
-        </form>
 
     <!-- Scripts  -->
+
+    <!-- 
+    
+    
+    TO DO
+    1. Add Emoji Map to general Event Listener and determine the closest value 
+        // Mapping for emoji values based on slider ranges
+        const emojiMap = {
+            
+            10: "&#128534", // 😢
+            20: "&#128553", // 😭
+            30: "&#128542", // 😞
+            40: "&#128543", // 😟
+            50: "&#128528", // 😐
+            60: "&#128522", // 😊
+            70: "&#128512", // 😀
+            80: "&#128513", // 😃
+            90: "&#128518", // 😆
+            100: "&#128514" // 😂
+        };
+
+        function getEmojiForSliderValue(value) {
+            // Find the closest value in the emojiMap
+            var keys = Object.keys(emojiMap).map(Number);
+            var closest = keys.reduce(function(prev, curr) {
+                return (Math.abs(curr - value) < Math.abs(prev - value) ? curr : prev);
+            });
+
+            return emojiMap[closest];
+        }
+
+    2. Standardize the funcationality of each emotion container by adding an Event Listener to the emoji selector
+            function updateSliderBasedOnEmoji() {
+                // Update the slider value based on the selected emoji
+                var selectedValue = generalEmojiValue.value;
+                generalSlider.value = selectedValue;
+
+                updateGeneralSelectBasedOnSlider();
+            }
+
+            generalEmojiValue.onchange = updateSliderBasedOnEmoji;
+    -->
+
+    
     
     <!-- General Script -->
     <script>
@@ -369,7 +418,7 @@
         document.getElementById("general-container-link").addEventListener("click", function(event) {
             event.preventDefault();
     
-            // Assign var to html elements
+            // Assign var value to html elements
             var generalContainer = document.getElementById("general-container");
             var generalArrow = document.getElementById("general-drop-down-arrow");
             var generalDefinition = document.getElementById("general-definition");
@@ -401,7 +450,14 @@
             var generalOutput = document.getElementById("general-value-text");
             var generalEmojiValue = document.getElementById("general-emoji");
             var generalColor;
-    
+            
+            function updateSliderBasedOnEmoji() {
+                // Update the slider value based on the selected emoji
+                var selectedValue = generalEmojiValue.value;
+                generalSlider.value = selectedValue;
+
+                updateGeneralSelectBasedOnSlider();
+            }
             function updateGeneralSelectBasedOnSlider() {
                 generalOutput.innerHTML = generalSlider.value;
     
@@ -411,6 +467,7 @@
                         break;
                     }
                 }
+
     
                 if (generalSlider.value >= 0 && generalSlider.value < 10) {
                     generalColor = '#ff0000'; // Red for values 0-9
@@ -441,6 +498,7 @@
             updateGeneralSelectBasedOnSlider();
     
             generalSlider.oninput = updateGeneralSelectBasedOnSlider;
+            generalEmojiValue.onchange = updateSliderBasedOnEmoji;
         });
     </script>
     <!-- Happiness Script -->
@@ -456,7 +514,7 @@
             var happinessDefinition = document.getElementById("happiness-definition");
 
             
-            // if statement to determine if 
+            // if statement to determine 
             if (happinessContainer.classList.contains('emotion-container')) {
                 // Expand
                 happinessContainer.classList.remove('emotion-container');
@@ -477,7 +535,8 @@
             }
             
         });
-        // 
+
+        // Silder Update function 
         document.addEventListener('DOMContentLoaded', function() {
             var happinessSlider = document.getElementById("happiness-slider");
             var happinessOutput = document.getElementById("happiness-value-text");
@@ -489,6 +548,7 @@
 
                 for (var i = 0; i < happinessEmojiValue.options.length; i++) {
                     if (parseInt(happinessEmojiValue.options[i].value) === parseInt(happinessSlider.value)) {
+                            
                         happinessEmojiValue.value = happinessEmojiValue.options[i].value;
                         break;
                     }
