@@ -14,61 +14,63 @@
             <div class="bottom-left" id="bottom-left"></div>
             <div class="bottom-right" id="bottom-right"></div>
         </div>
-</div>
-    <section class="header-container">
-        <div >
-            <h1 class="title">Check-In</h1>
-            <p class="title-description">
-                Often telling our partner how our day is going can put them in a position to understand our needs.
-            </p>
-            <p class="section-description">
-                Use the sliding bar below to show your partner your general well being, alternatively you can use 
-                the provided emojis or the color of the slider bar. 
-            </p>
-        </div>
-        <!-- General -->
-        
-        <div class="general-check-in-prompt" id="general-check-in-prompt">
-            <div class="general-emotion-widget-container">
-            
-                <div class="emotion" id="general">
-                    <div class="general-emotion-container" id="general-container">
-                        <a href="" class="emotion-text-container" id="general-container-link">
-                            <div>
-                                <p class="emotion-text">General Well-Being</p>
+    </div>
+    <form action="submit" id="general-form">
+        <div class="content-container">
+            <section class="header-container">
+                <div >
+                    <h1 class="title">Check-In</h1>
+                    <p class="title-description">
+                        Often telling our partner how our day is going can put them in a position to understand our needs.
+                    </p>
+                    <p class="section-description">
+                        Use the sliding bar below to show your partner your general well being, alternatively you can use 
+                        the provided emojis or the color of the slider bar. 
+                    </p>
+                </div>
+                <!-- General -->
+                
+                <div class="general-check-in-prompt" id="general-check-in-prompt">
+                    <div class="general-emotion-widget-container">
+                    
+                        <div class="emotion" id="general">
+                            <div class="general-emotion-container" id="general-container">
+                                <a href="" class="emotion-text-container" id="general-container-link">
+                                    <div>
+                                        <p class="emotion-text">General Well-Being</p>
+                                    </div>
+                                    <div class="drop-down-arrow" id="general-drop-down-arrow"></div>
+                                </a>
+                                <div class="slider-container">
+                                    <input type="range" name="general-slider-value" class="slider" id="general-slider" min="5" max="100" value="60" step="5" required>
+                                    <h4 class="slider-value-text" id="general-value-text">60</h4>
+                                </div>
+                                <div class="emoji-container">
+                                    <select class="emoji-selector" id="general-emoji" name="general-emoji-value">
+                                        <option value="5">&#128534</option>
+                                        <option value="10">&#128534</option>
+                                        <option value="20">&#128553</option>
+                                        <option value="30">&#128542</option>
+                                        <option value="40">&#128543</option>
+                                        <option value="50">&#128528</option>
+                                        <option value="60">&#128522</option>
+                                        <option value="70">&#128512</option>
+                                        <option value="80">&#128513</option>
+                                        <option value="90">&#128518</option>
+                                        <option value="100">&#128514</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <div class="emotion-definition" id="general-definition" hidden>
+                                    <p class="definition-text">This is test text</p>
+                                </div>
                             </div>
-                            <div class="drop-down-arrow" id="general-drop-down-arrow"></div>
-                        </a>
-                        <div class="slider-container">
-                            <input type="range" name="general-slider-value" name="-slider-value" class="slider" id="general-slider" min="5" max="100" value="60" step="5" required>
-                            <h4 class="slider-value-text" id="general-value-text">60</h4>
-                        </div>
-                        <div class="emoji-container">
-                            <select class="emoji-selector" id="general-emoji" name="general-emoji-value">
-                                <option value="5">&#128534</option>
-                                <option value="10">&#128534</option>
-                                <option value="20">&#128553</option>
-                                <option value="30">&#128542</option>
-                                <option value="40">&#128543</option>
-                                <option value="50">&#128528</option>
-                                <option value="60">&#128522</option>
-                                <option value="70">&#128512</option>
-                                <option value="80">&#128513</option>
-                                <option value="90">&#128518</option>
-                                <option value="100">&#128514</option>
-                            </select>
-                        </div>
-                        <br>
-                        <div class="emotion-definition" id="general-definition" hidden>
-                            <p class="definition-text">This is test text</p>
                         </div>
                     </div>
-                </div>
-            </div>
-            </div>
+                    </div>
+                
         
-
-        </section>
+            </section>
             <section class="section-container" id="section-container">
                 <div  class="check-in-prompt" id="check-in-prompt">
                     <div class="emotion-widget-container">
@@ -118,7 +120,7 @@
                                     <div class="drop-down-arrow" id="contentment-drop-down-arrow"></div>
                                 </a>
                                 <div class="slider-container">
-                                    <input type="range" name="-slider-value" class="slider" id="contentment-slider" min="5" max="100" value="60" step="5">
+                                    <input type="range" name="cententment-slider-value" class="slider" id="contentment-slider" min="5" max="100" value="60" step="5">
                                     <h4 class="slider-value-text" id="contentment-value-text">50</h4>
                                     
                                 </div>
@@ -153,7 +155,7 @@
                                     <div class="drop-down-arrow" id="peace-drop-down-arrow"></div>
                                 </a>
                                 <div class="slider-container">
-                                    <input type="range" name="-slider-value" class="slider" id="peace-slider" min="5" max="100" value="60" step="5">
+                                    <input type="range" name="peace-slider-value" class="slider" id="peace-slider" min="5" max="100" value="60" step="5">
                                     <h4 class="slider-value-text" id="peace-value-text">50</h4>
                                     
                                 </div>
@@ -188,7 +190,7 @@
                                     <div class="drop-down-arrow" id="fulfillment-drop-down-arrow"></div>
                                 </a>
                                 <div class="slider-container">
-                                    <input type="range" name="-slider-value" class="slider" id="fulfillment-slider" min="5" max="100" value="60" step="5">
+                                    <input type="range" name="fulfillment-slider-value" class="slider" id="fulfillment-slider" min="5" max="100" value="60" step="5">
                                     <h4 class="slider-value-text" id="fulfillment-value-text">50</h4>
                                     
                                 </div>
@@ -223,7 +225,7 @@
                                     <div class="drop-down-arrow" id="adventurous-drop-down-arrow"></div>
                                 </a>
                                 <div class="slider-container">
-                                    <input type="range" name="-slider-value" class="slider" id="adventurous-slider" min="5" max="100" value="60" step="5">
+                                    <input type="range" name="adventurous-slider-value" class="slider" id="adventurous-slider" min="5" max="100" value="60" step="5">
                                     <h4 class="slider-value-text" id="adventurous-value-text">50</h4>
                                     
                                 </div>
@@ -258,7 +260,7 @@
                                     <div class="drop-down-arrow" id="drive-drop-down-arrow"></div>
                                 </a>
                                 <div class="slider-container">
-                                    <input type="range" name="-slider-value" class="slider" id="drive-slider" min="5" max="100" value="60" step="5">
+                                    <input type="range" name="drive-slider-value" class="slider" id="drive-slider" min="5" max="100" value="60" step="5">
                                     <h4 class="slider-value-text" id="drive-value-text">50</h4>
                                     
                                 </div>
@@ -294,7 +296,7 @@
                                     <div class="drop-down-arrow" id="willpower-drop-down-arrow"></div>
                                 </a>
                                 <div class="slider-container">
-                                    <input type="range" name="-slider-value" class="slider" id="willpower-slider" min="5" max="100" value="60" step="5">
+                                    <input type="range" name="willpower-slider-value" class="slider" id="willpower-slider" min="5" max="100" value="60" step="5">
                                     <h4 class="slider-value-text" id="willpower-value-text">50</h4>
                                     
                                 </div>
@@ -330,7 +332,7 @@
                                     <div class="drop-down-arrow" id="excitement-drop-down-arrow"></div>
                                 </a>
                                 <div class="slider-container">
-                                    <input type="range" name="-slider-value" class="slider" id="excitement-slider" min="5" max="100" value="60" step="5">
+                                    <input type="range" name="excitement-slider-value" class="slider" id="excitement-slider" min="5" max="100" value="60" step="5">
                                     <h4 class="slider-value-text" id="excitement-value-text">50</h4>
                                     
                                 </div>
@@ -356,14 +358,26 @@
                                 
                         
                         </div>
-
+        
                     </div>
                     
                 </div>
             </section>
-            <div class="submit-button-container">
-                <input type="submit" value="Post" name="submit" class="submit-button" id="submit-button">
+                <div class="submit-button-container">
+                    <input type="submit" value="Post" name="submit" class="submit-button" id="submit-button">
+                </div>
+            <div class="calender-container">
+                <a href="" class="day" id="two-previous"></a>
+                <a href="" class="day" id="one-previous"></a>
+                <a href="" class="day" id="today"></a>
+                <a href="" class="day-empty" id="one-after"></a>
+                <a href="" class="day-empty" id="two-after"></a>
             </div>
+        </div>
+    </form>
+    
+    
+
 
     <!-- Scripts  -->
 
@@ -407,9 +421,12 @@
             }
 
             generalEmojiValue.onchange = updateSliderBasedOnEmoji;
+
+    3. Set     
+            
     -->
 
-    
+
     
     <!-- General Script -->
     <script>
@@ -1169,22 +1186,58 @@
 
     <!-- Store To JSON Script -->
     <script>
-        document.getElementById('general-form').addEventListener('submit', function(event) {
+        document.getElementById('submit-button').addEventListener('click', function(event) {
             event.preventDefault();
-            console.log("working");
+            
+            
+            function getCurrentDateStamp() {
+                var now = new Date();
+                return now.toISOString(); // Formats date as ISO 8601 string (e.g., "2024-08-10T12:34:56.789Z")
+            }
 
             var latestLog = new FormData(document.getElementById('general-form'));
-            var latestLogData = {};
+            var latestLogData = {
+                dateStamp: getCurrentDateStamp()
+            };
 
             for (const [key, value] of latestLog) {
                 latestLogData[key] = value;
-                console.log(latestLog);
             }
-            
-            console.log(JSON.stringify(latestLogData));
+            var jsonString = JSON.stringify(latestLogData, null, 2);
+            // Create a Blob with the JSON data
+            var blob = new Blob([jsonString], { type: "application/json" });
+
+            // Create a URL for the Blob
+            var url = URL.createObjectURL(blob);
+
+            // Create a new anchor element
+            var a = document.createElement('a');
+            a.href = url;
+            localStorage.setItem('userData', JSON.stringify(latestLogData));
+
+
+            // Append the anchor to the body (necessary for Firefox)
+            document.body.appendChild(a);
+
+            // Programmatically click the anchor to trigger the download
+            a.click();
+
+            // Remove the anchor from the document
+            document.body.removeChild(a);
+
+            // Revoke the Blob URL to free up resources
+            URL.revokeObjectURL(url);
+
         });
         
         
+    </script>
+    <script>
+        var twoPrevious = document.getElementById("two-previous");
+        var onePrevious = document.getElementById("one-previous");
+        var today = document.getElementById("today");
+        var oneAfter = document.getElementById("one-after");
+        var twoAfter = document.getElementById("two-after");
     </script>
 </body>
 </html>
